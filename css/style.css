@@ -1,0 +1,117 @@
+/* Färgpallett */
+:root {
+  --bg-color: #2F2F27;
+  --box-color: #16170B;
+  --nav-color: #47465D;
+  --nav-button-color: #6F6DA5;
+  --link-color: #8685C1;
+}
+
+/* Allmän styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #2F2F27;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Navigeringsmeny */
+nav {
+  background-color: #47465D;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+/* Navigeringsknappar */
+nav button,
+nav a {
+  background-color: #6F6DA5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+nav button:hover,
+nav a:hover {
+  background-color: #8685C1;
+}
+
+/* Länkfärg */
+a {
+  color: #8685C1;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+/* Böxar för text och bilder */
+.box,
+.card,
+.container {
+  background-color: #16170B;
+  padding: 20px;
+  border-radius: 8px;
+  margin: 15px 0;
+  color: #ffffff;
+}
+
+.box:hover,
+.card:hover,
+.container:hover {
+  box-shadow: 0 4px 8px rgba(134, 133, 193, 0.3);
+}
+
+/* Rubrikstil */
+h1, h2, h3, h4, h5, h6 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+/* Bildkontainer */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Knappstil */
+button {
+  background-color: #6F6DA5;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8685C1;
+}
+
+/* Footer */
+footer {
+  background-color: #47465D;
+  padding: 20px;
+  text-align: center;
+  margin-top: 40px;
+}
