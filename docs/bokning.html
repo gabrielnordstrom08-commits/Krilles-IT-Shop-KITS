@@ -4,9 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <title>Bokning - Krilles IT Shop</title>
 </head>
 <body>
-    
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Hem</a></li>
+                <li><a href="bokning.html">Bokning</a></li>
+                <li><a href="lager.html">Lager</a></li>
+                <li><a href="reparationer.html">Reparationer</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-main">
+            <h1>Boka en Tjänst</h1>
+            
+            <section>
+                <h2>Bokningstimmar</h2>
+                <img src="https://via.placeholder.com/600x300?text=Bokningstider" alt="Bokningstider">
+                <p>Vi finns tillgängliga för bokning under följande timmar:</p>
+                <ul>
+                    <li>Måndag - Fredag: 09:00 - 18:00</li>
+                    <li>Lördag: 10:00 - 16:00</li>
+                    <li>Söndag: Stängt</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Bokningsformulär</h2>
+                <form>
+                    <div>
+                        <label for="name">Namn:</label><br>
+                        <input type="text" id="name" name="name" required>
+                    </div><br>
+                    
+                    <div>
+                        <label for="email">Email:</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </div><br>
+                    
+                    <div>
+                        <label for="phone">Telefon:</label><br>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div><br>
+                    
+                    <div>
+                        <label for="service">Välj tjänst:</label><br>
+                        <select id="service" name="service" required>
+                            <option value="">-- Välj tjänst --</option>
+                            <option value="repair">Datorreparation</option>
+                            <option value="maintenance">Underhåll</option>
+                            <option value="installation">Installation</option>
+                            <option value="consulting">Konsultation</option>
+                        </select>
+                    </div><br>
+                    
+                    <div>
+                        <label for="date">Önskat datum:</label><br>
+                        <input type="date" id="date" name="date" required>
+                    </div><br>
+                    
+                    <div>
+                        <label for="message">Meddelande:</label><br>
+                        <textarea id="message" name="message" rows="5" cols="50">Beskriv ditt problem här...</textarea>
+                    </div><br>
+                    
+                    <button type="submit">Boka Tid</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Krilles IT Shop. Alla rättigheter förbehållna.</p>
+        <p>Kontakt: info@krilles-it.se | Telefon: 070-123 45 67</p>
+    </footer>
 </body>
 </html>
